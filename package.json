@@ -6,7 +6,7 @@
 		"build": "nitro build",
 		"dev": "nitro dev",
 		"prepare": "nitro prepare",
-		"preview": "srvx .output/server/index.mjs",
+		"preview": "nitro preview",
 		"lint:check": "oxlint && oxfmt --check",
 		"lint:fix": "oxlint --fix && oxfmt"
 	},
@@ -16,12 +16,12 @@
 	},
 	"devDependencies": {
 		"@types/js-yaml": "^4.0.9",
-		"@types/node": "^25.2.3",
-		"nitro": "3.0.1-alpha.2",
-		"oxfmt": "^0.32.0",
-		"oxlint": "^1.47.0",
-		"rolldown": "1.0.0-rc.2",
-		"srvx": "^0.11.4"
+		"@types/node": "^25.5.0",
+		"nitro": "3.0.260311-beta",
+		"oxfmt": "^0.41.0",
+		"oxlint": "^1.56.0",
+		"rolldown": "1.0.0-rc.9",
+		"srvx": "^0.11.12"
 	},
 	"lint-staged": {
 		"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "oxlint"
