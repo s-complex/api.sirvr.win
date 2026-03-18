@@ -11,9 +11,6 @@ importers:
       js-yaml:
         specifier: ^4.1.1
         version: 4.1.1
-      ofetch:
-        specifier: ^1.5.1
-        version: 1.5.1
     devDependencies:
       '@types/js-yaml':
         specifier: ^4.0.9
@@ -584,9 +581,6 @@ packages:
       sqlite3:
         optional: true
 
-  destr@2.0.5:
-    resolution: {integrity: sha512-ugFTXCtDZunbzasqBxrK93Ik/DRYsO6S/fedkWEMKqt04xZ4csmnmwGDBAb07QWNaGMAmnTIemsYZCksjATwsA==}
-
   env-runner@0.1.6:
     resolution: {integrity: sha512-fSb7X1zdda8k6611a6/SdSQpDe7a/bqMz2UWdbHjk9YWzpUR4/fn9YtE/hqgGQ2nhvVN0zUtcL1SRMKwIsDbAA==}
     hasBin: true
@@ -656,14 +650,8 @@ packages:
       zephyr-agent:
         optional: true
 
-  node-fetch-native@1.6.7:
-    resolution: {integrity: sha512-g9yhqoedzIUm0nTnTqAQvueMPVOuIY16bqgAJJC8XOOubYFNwz6IER9qs0Gq2Xd0+CecCKFjtdDTMA4u4xG06Q==}
-
   ocache@0.1.2:
     resolution: {integrity: sha512-lI34wjM7cahEdrq2I5obbF7MEdE97vULf6vNj6ZCzwEadzyXO1w7QOl2qzzG4IL8cyO7wDtXPj9CqW/aG3mn7g==}
-
-  ofetch@1.5.1:
-    resolution: {integrity: sha512-2W4oUZlVaqAPAil6FUg/difl6YhqhUR7x2eZY4bQCko22UXg3hptq9KLQdqFClV+Wu85UX7hNtdGTngi/1BxcA==}
 
   ofetch@2.0.0-alpha.3:
     resolution: {integrity: sha512-zpYTCs2byOuft65vI3z43Dd6iSdFbOZZLb9/d21aCpx2rGastVU9dOCv0lu4ykc1Ur1anAYjDi3SUvR0vq50JA==}
@@ -713,9 +701,6 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
-
-  ufo@1.6.3:
-    resolution: {integrity: sha512-yDJTmhydvl5lJzBmy/hyOAA0d+aqCBuwl818haVdYCRrWV84o7YyeVm4QlVHStqNrrJSTb6jKuFAVqAFsr+K3Q==}
 
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
@@ -1086,8 +1071,6 @@ snapshots:
 
   db0@0.3.4: {}
 
-  destr@2.0.5: {}
-
   env-runner@0.1.6:
     dependencies:
       crossws: 0.4.4(srvx@0.11.12)
@@ -1166,17 +1149,9 @@ snapshots:
       - sqlite3
       - uploadthing
 
-  node-fetch-native@1.6.7: {}
-
   ocache@0.1.2:
     dependencies:
       ohash: 2.0.11
-
-  ofetch@1.5.1:
-    dependencies:
-      destr: 2.0.5
-      node-fetch-native: 1.6.7
-      ufo: 1.6.3
 
   ofetch@2.0.0-alpha.3: {}
 
@@ -1291,8 +1266,6 @@ snapshots:
 
   tslib@2.8.1:
     optional: true
-
-  ufo@1.6.3: {}
 
   undici-types@7.18.2: {}
 

@@ -1,10 +1,17 @@
 import { defineHandler } from 'nitro/h3';
-import { ofetch } from 'ofetch';
+import { fetch } from 'nitro';
+
+interface Repo {
+	name: string;
+	repo: string;
+	description?: string;
+}
 
 export default defineHandler(async () => {
-	const { repos = [] } = await ofetch<{
-		repos?: { name: string; repo: string; description?: string }[];
-	}>('https://ungh.cc/users/s-complex/repos');
+	const response = await fetch('https://ungh.cc/users/s-complex/repos');
+
+	const { repos }: { repos: Repo[] } = await response.json();
+	console.log(repos)
 
 	return repos.map((item) => ({
 		name: item.name,
