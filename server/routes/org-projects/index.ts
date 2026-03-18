@@ -11,7 +11,6 @@ export default defineHandler(async () => {
 	const response = await fetch('https://ungh.cc/users/s-complex/repos');
 
 	const { repos }: { repos: Repo[] } = await response.json();
-	console.log(repos)
 
 	return repos.map((item) => ({
 		name: item.name,
