@@ -1,10 +1,5 @@
-import yaml from 'js-yaml';
 import { defineCachedHandler } from 'nitro/cache';
-import { fetch } from 'nitro';
-
-interface FriendsList {
-	[key: string]: { slogan: string; avatar: string; link: string };
-}
+import { fetchLinksData } from '~/server/utils/fetchLinksData';
 
 function getRandomEntries<T>(obj: Record<string, T>, count: number): Record<string, T> {
 	const entries = Object.entries(obj);
@@ -18,11 +13,7 @@ function getRandomEntries<T>(obj: Record<string, T>, count: number): Record<stri
 
 export default defineCachedHandler(
 	async () => {
-		const source = await fetch(
-			'https://raw.githubusercontent.com/s-complex/Friends/refs/heads/main/list.yml'
-		);
-
-		const list = yaml.load(await source.text()) as FriendsList;
+		const list = await fetchLinksData();
 
 		const result = Object.fromEntries(
 			Object.entries(list).map(([key, value]) => [
