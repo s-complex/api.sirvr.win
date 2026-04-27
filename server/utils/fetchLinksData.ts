@@ -6,11 +6,11 @@ interface FriendsList {
 }
 
 export async function fetchLinksData() {
-    const source = await fetch(
-        'https://raw.githubusercontent.com/s-complex/Friends/refs/heads/main/list.yml'
-    );
+	const source = await fetch(
+		'https://raw.githubusercontent.com/s-complex/Friends/refs/heads/main/list.yml'
+	);
 
-    const list = yaml.load(await source.text()) as FriendsList;
+	const list = yaml.load(await source.text()) as FriendsList;
 
-    return list;
+	return list;
 }
