@@ -16,10 +16,10 @@
 	"devDependencies": {
 		"@types/js-yaml": "^4.0.9",
 		"@types/node": "^25.6.0",
-		"nitro": "3.0.260415-beta",
-		"oxfmt": "^0.46.0",
-		"oxlint": "^1.61.0",
-		"rolldown": "1.0.0-rc.17"
+		"nitro": "3.0.260429-beta",
+		"oxfmt": "^0.47.0",
+		"oxlint": "^1.62.0",
+		"rolldown": "1.0.0-rc.18"
 	},
 	"lint-staged": {
 		"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "oxlint"
