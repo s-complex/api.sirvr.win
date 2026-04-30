@@ -5,6 +5,7 @@ export default defineNitroConfig({
 	compatibilityDate: '2026-02-15',
 	serverDir: 'server',
 	builder: 'rolldown',
+	preset: 'cloudflare-module',
 	routeRules: {
 		'/**': {
 			cors: true,
